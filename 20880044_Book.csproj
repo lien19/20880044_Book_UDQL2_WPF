@@ -1,0 +1,191 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>_20880044_Book</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\**" />
+    <EmbeddedResource Remove="Common\**" />
+    <None Remove="Common\**" />
+    <Page Remove="Common\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\add.png" />
+    <None Remove="Images\box.png" />
+    <None Remove="Images\cart.png" />
+    <None Remove="Images\config.png" />
+    <None Remove="Images\edit.png" />
+    <None Remove="Images\help.png" />
+    <None Remove="Images\Icon\upload.png" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\1.jpg" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\10.jpg" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\2.jpg" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\3.jpg" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\4.jpg" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\5.jpg" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\6.jpg" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\7.jpg" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\8.jpg" />
+    <None Remove="Images\KinhTe_KhoaHoc_KyThuat\9.jpg" />
+    <None Remove="Images\pencil %281%29.png" />
+    <None Remove="Images\pencil %282%29.png" />
+    <None Remove="Images\pencil.png" />
+    <None Remove="Images\plus.png" />
+    <None Remove="Images\remove-from-cart.png" />
+    <None Remove="Images\remove.png" />
+    <None Remove="Images\SachThieuNhi\1.jpg" />
+    <None Remove="Images\SachThieuNhi\10.jpg" />
+    <None Remove="Images\SachThieuNhi\11.jpg" />
+    <None Remove="Images\SachThieuNhi\12.jpg" />
+    <None Remove="Images\SachThieuNhi\13.jpg" />
+    <None Remove="Images\SachThieuNhi\14.jpg" />
+    <None Remove="Images\SachThieuNhi\15.jpg" />
+    <None Remove="Images\SachThieuNhi\2.jpg" />
+    <None Remove="Images\SachThieuNhi\3.jpg" />
+    <None Remove="Images\SachThieuNhi\4.jpg" />
+    <None Remove="Images\SachThieuNhi\5.jpg" />
+    <None Remove="Images\SachThieuNhi\6.jpg" />
+    <None Remove="Images\SachThieuNhi\7.jpg" />
+    <None Remove="Images\SachThieuNhi\8.jpg" />
+    <None Remove="Images\SachThieuNhi\9.jpg" />
+    <None Remove="Images\search %281%29.png" />
+    <None Remove="Images\search.png" />
+    <None Remove="Images\TamLy_KyNangSong\1.jpg" />
+    <None Remove="Images\TamLy_KyNangSong\2.jpg" />
+    <None Remove="Images\TamLy_KyNangSong\3.jpg" />
+    <None Remove="Images\TamLy_KyNangSong\4.jpg" />
+    <None Remove="Images\TamLy_KyNangSong\4.png" />
+    <None Remove="Images\TamLy_KyNangSong\6.jpg" />
+    <None Remove="Images\TamLy_KyNangSong\7.jpg" />
+    <None Remove="Images\TamLy_KyNangSong\8.jpg" />
+    <None Remove="Images\TamLy_KyNangSong\9.jpg" />
+    <None Remove="Images\trash-bin.png" />
+    <None Remove="Images\VanHoc\1.jpg" />
+    <None Remove="Images\VanHoc\10.jpg" />
+    <None Remove="Images\VanHoc\11.jpg" />
+    <None Remove="Images\VanHoc\12.jpg" />
+    <None Remove="Images\VanHoc\13.jpg" />
+    <None Remove="Images\VanHoc\14.jpg" />
+    <None Remove="Images\VanHoc\15.jpg" />
+    <None Remove="Images\VanHoc\16.jpg" />
+    <None Remove="Images\VanHoc\17.jpg" />
+    <None Remove="Images\VanHoc\18.jpg" />
+    <None Remove="Images\VanHoc\19.jpg" />
+    <None Remove="Images\VanHoc\2.jpg" />
+    <None Remove="Images\VanHoc\20.jpg" />
+    <None Remove="Images\VanHoc\3.jpg" />
+    <None Remove="Images\VanHoc\4.jpg" />
+    <None Remove="Images\VanHoc\5.jpg" />
+    <None Remove="Images\VanHoc\6.jpg" />
+    <None Remove="Images\VanHoc\7.jpg" />
+    <None Remove="Images\VanHoc\8.jpg" />
+    <None Remove="Images\VanHoc\9.jpg" />
+    <None Remove="Images\wishlist.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpressMvvm" Version="21.1.5" />
+    <PackageReference Include="Fluent.Ribbon" Version="9.0.4" />
+    <PackageReference Include="LiveCharts.Wpf.NetCore3" Version="0.9.7" />
+    <PackageReference Include="Nito.Mvvm.Async" Version="1.0.0-pre-04" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.4.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    <PackageReference Include="System.Windows.Interactivity.WPF" Version="2.0.20525" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfLibrary\WpfLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\..\..\..\..\..\..\dll\Aspose.Cells.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Icon\add.png" />
+    <Resource Include="Images\Icon\box.png" />
+    <Resource Include="Images\Icon\cart.png" />
+    <Resource Include="Images\Icon\config.png" />
+    <Resource Include="Images\Icon\edit.png" />
+    <Resource Include="Images\Icon\help.png" />
+    <Resource Include="Images\Icon\pencil %281%29.png" />
+    <Resource Include="Images\Icon\pencil %282%29.png" />
+    <Resource Include="Images\Icon\pencil.png" />
+    <Resource Include="Images\Icon\plus.png" />
+    <Resource Include="Images\Icon\remove-from-cart.png" />
+    <Resource Include="Images\Icon\remove.png" />
+    <Resource Include="Images\Icon\search %281%29.png" />
+    <Resource Include="Images\Icon\search.png" />
+    <Resource Include="Images\Icon\trash-bin.png" />
+    <Resource Include="Images\Icon\upload.png" />
+    <Resource Include="Images\Icon\wishlist.png" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\1.jpg" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\10.jpg" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\2.jpg" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\3.jpg" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\4.jpg" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\5.jpg" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\6.jpg" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\7.jpg" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\8.jpg" />
+    <Resource Include="Images\KinhTe_KhoaHoc_KyThuat\9.jpg" />
+    <Resource Include="Images\SachThieuNhi\1.jpg" />
+    <Resource Include="Images\SachThieuNhi\10.jpg" />
+    <Resource Include="Images\SachThieuNhi\11.jpg" />
+    <Resource Include="Images\SachThieuNhi\12.jpg" />
+    <Resource Include="Images\SachThieuNhi\13.jpg" />
+    <Resource Include="Images\SachThieuNhi\14.jpg" />
+    <Resource Include="Images\SachThieuNhi\15.jpg" />
+    <Resource Include="Images\SachThieuNhi\2.jpg" />
+    <Resource Include="Images\SachThieuNhi\3.jpg" />
+    <Resource Include="Images\SachThieuNhi\4.jpg" />
+    <Resource Include="Images\SachThieuNhi\5.jpg" />
+    <Resource Include="Images\SachThieuNhi\6.jpg" />
+    <Resource Include="Images\SachThieuNhi\7.jpg" />
+    <Resource Include="Images\SachThieuNhi\8.jpg" />
+    <Resource Include="Images\SachThieuNhi\9.jpg" />
+    <Resource Include="Images\TamLy_KyNangSong\1.jpg" />
+    <Resource Include="Images\TamLy_KyNangSong\2.jpg" />
+    <Resource Include="Images\TamLy_KyNangSong\3.jpg" />
+    <Resource Include="Images\TamLy_KyNangSong\4.jpg" />
+    <Resource Include="Images\TamLy_KyNangSong\4.png" />
+    <Resource Include="Images\TamLy_KyNangSong\6.jpg" />
+    <Resource Include="Images\TamLy_KyNangSong\7.jpg" />
+    <Resource Include="Images\TamLy_KyNangSong\8.jpg" />
+    <Resource Include="Images\TamLy_KyNangSong\9.jpg" />
+    <Resource Include="Images\VanHoc\1.jpg" />
+    <Resource Include="Images\VanHoc\10.jpg" />
+    <Resource Include="Images\VanHoc\11.jpg" />
+    <Resource Include="Images\VanHoc\12.jpg" />
+    <Resource Include="Images\VanHoc\13.jpg" />
+    <Resource Include="Images\VanHoc\14.jpg" />
+    <Resource Include="Images\VanHoc\15.jpg" />
+    <Resource Include="Images\VanHoc\16.jpg" />
+    <Resource Include="Images\VanHoc\17.jpg" />
+    <Resource Include="Images\VanHoc\18.jpg" />
+    <Resource Include="Images\VanHoc\19.jpg" />
+    <Resource Include="Images\VanHoc\2.jpg" />
+    <Resource Include="Images\VanHoc\20.jpg" />
+    <Resource Include="Images\VanHoc\3.jpg" />
+    <Resource Include="Images\VanHoc\4.jpg" />
+    <Resource Include="Images\VanHoc\5.jpg" />
+    <Resource Include="Images\VanHoc\6.jpg" />
+    <Resource Include="Images\VanHoc\7.jpg" />
+    <Resource Include="Images\VanHoc\8.jpg" />
+    <Resource Include="Images\VanHoc\9.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="_20880044_Book.View.BookCategoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             
+        xmlns:local="clr-namespace:_20880044_Book.View"
+        xmlns:viewmodel="clr-namespace:_20880044_Book.ViewModel"
+        mc:Ignorable="d"
+         Height="450" Width="800">
+    <!--Title="BookCategoryWindow"-->
+    <UserControl.Resources>
+        <viewmodel:MainViewModel x:Key="MainViewModel"/>
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <viewmodel:MainViewModel/>
+    </UserControl.DataContext>
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        
+        <StackPanel Orientation="Vertical">
+            
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Button Content="AutoUpdateCommand" Command="{Binding AutoUpdateCommand}" 
+                        Margin="3" VerticalAlignment="Center"/>
+                <CheckBox Content="IsAutoUpdateCommandEnabled" IsChecked="{Binding IsAutoUpdateCommandEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                          Margin="3" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Button Content="ManualUpdateCommand" Command="{Binding ManualUpdateCommand}"
+                        Margin="3" VerticalAlignment="Center"/>
+                <CheckBox Content="IsManualUpdateCommandEnabled" IsChecked="{Binding IsManualUpdateCommandEnabled, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          Margin="3" VerticalAlignment="Center"/>
+                <Button Content="ForceUpdateManualUpdateCommand" Command="{Binding ForceUpdateManualUpdateCommand}"
+                        Margin="3" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBox Text="{Binding ElementName=test, Path=Text}" x:Name="message" Width="80"/>
+                <Button Content="CommandWithParameter" Command="{Binding CommandWithParameter}" CommandParameter="{Binding ElementName=message, Path=Text}"
+                        Margin="3" VerticalAlignment="Center"/>
+            </StackPanel>
+            <TextBox x:Name="test" TextWrapping="Wrap"  Width="120"/>
+        </StackPanel>
+    </Grid>
+    </UserControl>
